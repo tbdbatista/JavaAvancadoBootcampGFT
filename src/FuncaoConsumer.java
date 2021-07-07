@@ -5,7 +5,7 @@ public class FuncaoConsumer {
 
         //Consumer<String> imprimeFrase = frase -> System.out.println(frase);
 
-        Consumer<String> imprimeFrase = System.out::println;
+        Consumer<String> imprimeFrase = System.out::println; // não necessita retorno
         imprimeFrase.accept("Hello World!");
 
     }
